@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParentConnect AI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-logo">P</div>
+
+        <div class="brand-text">
+          <h2>ParentConnect</h2>
+          <p>AI School Assistant</p>
+        </div>
+      </div>
+
+      <nav class="navigation">
+
+        <a href="#home" class="nav-item active">
+          <span class="nav-icon">⌂</span>
+          <span>Home</span>
+        </a>
+
+        <a href="#services" class="nav-item">
+          <span class="nav-icon">▦</span>
+          <span>Services</span>
+        </a>
+
+        <button class="nav-item chat-button" onclick="openChat()">
+          <span class="nav-icon">◌</span>
+          <span>Ask ParentConnect</span>
+        </button>
+
+      </nav>
+
+      <div class="sidebar-status">
+        <div class="status-dot"></div>
+
+        <div>
+          <strong>Assistant Online</strong>
+          <small>Ready to help</small>
+        </div>
+      </div>
+
+    </aside>
+
+
+    <main class="main-content" id="home">
+
+   
+      <header class="topbar">
+
+        <div>
+          <p class="eyebrow">SCHOOL INFORMATION SYSTEM</p>
+
+          <h1>Welcome to ParentConnect AI</h1>
+
+          <p class="top-description">
+            Get quick answers about attendance, exams, fees,
+            announcements, academics, events and more.
+          </p>
+        </div>
+
+        <button class="primary-button" onclick="openChat()">
+          Ask the AI
+          <span>→</span>
+        </button>
+
+      </header>
+
+
+     
+      <section class="hero">
+
+        <div class="hero-content">
+
+          <div class="online-badge">
+            <span></span>
+            AI ASSISTANT ONLINE
+          </div>
+
+          <h2>
+            Your school's information,
+            <br>
+            <span>in one conversation.</span>
+          </h2>
+
+          <p>
+            ParentConnect AI helps parents find important school
+            information without searching through multiple notices,
+            documents or portals.
+          </p>
+
+          <button class="primary-button hero-button" onclick="openChat()">
+            Start a conversation
+            <span>→</span>
+          </button>
+
+        </div>
+
+
+   
+        <div class="chat-preview">
+
+          <div class="chat-header">
+
+            <div class="chat-avatar">P</div>
+
+            <div>
+              <strong>ParentConnect AI</strong>
+              <small>Online • School Assistant</small>
+            </div>
+
+            <span class="chat-menu">•••</span>
+
+          </div>
+
+
+          <div class="chat-body">
+
+            <div class="message bot-message">
+
+              <small>ParentConnect AI</small>
+
+              Hi! How can I help you today?
+
+            </div>
+
+
+            <div class="message user-message">
+
+              What is my child's attendance?
+
+            </div>
+
+
+            <div class="message bot-message">
+
+              <small>ParentConnect AI</small>
+
+              Your child's overall attendance is
+              <strong>92%</strong>.
+
+              <div class="quick-options">
+
+                <span>Subject-wise</span>
+                <span>By term</span>
+                <span>By date</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+  
+      <section class="services" id="services">
+
+        <div class="section-header">
+
+          <div>
+            <p class="eyebrow">WHAT YOU CAN ASK</p>
+
+            <h2>Everything parents need</h2>
+          </div>
+
+          <p>
+            Choose a category or simply ask the chatbot
+            in natural language.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+          <article class="service-card">
+
+            <div class="service-icon">✓</div>
+
+            <h3>Attendance</h3>
+
+            <p>
+              Check overall, subject-wise, term
+              and date-specific attendance.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">▣</div>
+
+            <h3>Exams</h3>
+
+            <p>
+              Find exam schedules, timetables,
+              upcoming exams and results.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">₹</div>
+
+            <h3>Fees</h3>
+
+            <p>
+              View balances, payment history,
+              fee structure and payment details.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">!</div>
+
+            <h3>Announcements</h3>
+
+            <p>
+              Stay updated with school,
+              academic and event announcements.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">A+</div>
+
+            <h3>Academics</h3>
+
+            <p>
+              Access schedules, subjects,
+              assignments and academic performance.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">◷</div>
+
+            <h3>Events</h3>
+
+            <p>
+              Explore upcoming school events,
+              sports and school activities.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">⌁</div>
+
+            <h3>Transport</h3>
+
+            <p>
+              Find bus routes, timings,
+              stops and transport contacts.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-icon">?</div>
+
+            <h3>Support</h3>
+
+            <p>
+              Get technical help, school contacts,
+              FAQs and emergency contacts.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+   
+      <section class="cta">
+
+        <div>
+
+          <p class="eyebrow">PARENTCONNECT AI</p>
+
+          <h2>Have a question?</h2>
+
+          <p>
+            Ask the assistant instead of searching
+            through school information manually.
+          </p>
+
+        </div>
+
+        <button class="primary-button" onclick="openChat()">
+          Open Chat
+          <span>→</span>
+        </button>
+
+      </section>
+
+
+      
+      <footer>
+
+        <span>ParentConnect AI</span>
+
+        <span>
+          IBCP Summative Project • 2026
+        </span>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+
+ <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger
+  intent="WELCOME"
+  chat-title="ParentConnect_AI"
+  agent-id="80bcc71e-9d32-4975-9bfc-c25149f74470"
+  language-code="en">
+</df-messenger>
+
+
+  
+
+
+  <script>
+
+    function openChat() {
+
+      const messenger = document.querySelector("df-messenger");
+
+      if (!messenger) return;
+
+      if (typeof messenger.open === "function") {
+
+        messenger.open();
+
+      } else {
+
+        const button =
+          messenger.shadowRoot?.querySelector("button");
+
+        if (button) {
+          button.click();
+        }
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
